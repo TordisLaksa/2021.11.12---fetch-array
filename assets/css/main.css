@@ -1,0 +1,138 @@
+body {
+  margin: 1vw;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+}
+
+body.no-scroll .goalmodal {
+  overflow-y: scroll;
+}
+
+.goalcontainer {
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 1vw;
+}
+
+.goalcontainer .wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.goalcontainer .wrapper h2 {
+  text-align: center;
+  font-size: 2vw;
+  color: white;
+}
+
+.goalcontainer .wrapper .icons {
+  width: 60%;
+  margin: auto;
+  fill: white;
+  padding-bottom: 2vw;
+}
+
+.goalcontainer .wrapper a {
+  position: absolute;
+  bottom: .5vw;
+  right: .5vw;
+  text-decoration: none;
+  padding-right: 1vw;
+  color: white;
+  font-size: 1.3vw;
+}
+
+.goalcontainer .wrapper a:hover {
+  text-decoration: underline;
+}
+
+.goalmodal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.goalmodal.hidden {
+  display: none;
+}
+
+.goalmodal .modal {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.goalmodal .modal span {
+  position: absolute;
+  top: 0;
+  right: 1vw;
+  font-size: 4vw;
+}
+
+.goalmodal .modal span:hover {
+  color: white;
+}
+
+.goalmodal .modal h2 {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.goalmodal .modal h3 {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.goalmodal .modal div {
+  width: 10%;
+}
+
+.goalmodal .modal div svg {
+  width: 100%;
+}
+
+.goalmodal .modal p {
+  font-size: 1.3vw;
+  line-height: 2vw;
+}
+
+.goalmodal .modal img {
+  width: 90%;
+}
+
+.goalmodal .modal ul li {
+  font-size: 1.3vw;
+  line-height: 2.5vw;
+}
+/*# sourceMappingURL=main.css.map */

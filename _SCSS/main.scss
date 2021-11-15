@@ -1,0 +1,106 @@
+body{
+    margin: 1vw;
+    &.no-scroll{
+        overflow-y: hidden;
+        .goalmodal{
+            overflow-y: scroll;
+        }
+    }
+}
+.goalcontainer{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    .wrapper{
+        // aspect-ratio: 1/1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            text-align: center;
+            font-size: 2vw;
+            color: white;
+        }
+        .icons{
+            width: 60%;
+            margin: auto;
+            fill: white;
+            padding-bottom: 2vw;
+        }
+        a{
+            position: absolute;
+            bottom: .5vw;
+            right: .5vw;
+            text-decoration: none;
+            padding-right: 1vw;
+            color: white;
+            font-size: 1.3vw;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.goalmodal{
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    &.hidden{
+        display: none;
+    }
+
+    .modal{
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+        box-sizing: border-box;
+        span{
+            position: absolute;
+            top: 0;
+            right: 1vw;
+            font-size: 4vw;
+            &:hover{
+                color: white;
+            }
+        }
+        h2{
+            font-size: 3vw;
+        text-align: center;
+        }
+        h3{
+            font-size: 2vw;
+        text-align: center;
+        }
+        div{
+            width: 10%;
+            svg{
+                width: 100%;
+            }
+        }
+        p{
+            font-size: 1.3vw;
+            line-height: 2vw;
+        }
+        img{
+            width: 90%;
+        }
+        ul{
+            li{
+                font-size: 1.3vw;
+                line-height: 2.5vw;
+            }
+        }
+    }
+}
